@@ -1,6 +1,6 @@
 (function() {
   // Inicializa EmailJS con tu user_id
-  emailjs.init('_Uk0UtstvP9S1unH5'); // Reemplaza 'YOUR_USER_ID' con tu ID de usuario de EmailJS
+  emailjs.init('i0L2uutTpfLOo50XP'); // Reemplaza 'YOUR_USER_ID' con tu ID de usuario de EmailJS
 
   // Selecciona el formulario y agrega un event listener para el submit
   document.querySelector('.container__form').addEventListener('submit', function(event) {
@@ -14,7 +14,7 @@
     };
 
     // Enviar el formulario a EmailJS
-    emailjs.send('service_rue4aut', 'template_4p0ejug', formData)
+    emailjs.send('service_3fw79i3', 'template_o04wpug', formData)
       .then(function(response) {
         alert('¡Tu mensaje ha sido enviado con éxito!');
         document.querySelector('.container__form').reset(); // Limpiar el formulario
