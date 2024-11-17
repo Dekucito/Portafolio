@@ -18,6 +18,11 @@
     --layer3: 3;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .body {
     background-color: #030712;
     display: flex;
@@ -158,10 +163,6 @@ border-bottom-color: var(--title);
     margin-top: 0;
 }
 
-@media screen {
-    
-}
-
 
 /*============= Bloque contenedores ================*/
 
@@ -173,11 +174,24 @@ border-bottom-color: var(--title);
 
 .container__header {
     height: 50px;
+    position: fixed;
     width: 100%;
-    display: flex;
-    margin-top: 10px;
-    position: relative;
-    z-index: var(--layer3);
+    left: 0;
+    z-index: 100;
+    transition: top 0.3s, background-color 0.3s;
+}
+
+.container__header.hidden {
+    top: -50px;
+}
+
+.container__header.visible {
+    top: 0;
+}
+
+.container__header.scrolled {
+    background-color: #030712; /* Cambia este color al que prefieras */
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1); /* Sombra sutil en la parte inferior */
 }
 
 /*============= Bloque navegacion ================*/
@@ -187,7 +201,26 @@ border-bottom-color: var(--title);
     margin: auto;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 1250px;
+}
+
+@media (max-width: 1250px) {
+
+    .container__header {
+        padding: 10px 10px 0 10px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 720px) {
+    .container__header {
+        padding: 17px 10px 0 10px;
+    }
+
 }
 
 .nav__list {
@@ -364,6 +397,7 @@ border-bottom-color: var(--title);
     width: 100%;
     height: calc(100vh - 60px);
     display: flex;
+    margin-top: 60px;
 }
 
 .start__text {
@@ -412,10 +446,6 @@ border-bottom-color: var(--title);
 }
 
 @media (max-width: 1300px) {
-
-    .button--responsive-job{
-        margin-left: 25px;
-    }
 
     .start {
         flex-direction: column;

@@ -15,6 +15,7 @@
     background-color: rgba(24, 24, 24, 0.7);
     z-index: 1;
     pointer-events: none;
+    user-select: none;
 }
 
 .carrousel__overlay-gradient {
@@ -26,16 +27,17 @@
     background: linear-gradient(to left, rgba(24, 24, 24, 1), rgba(0, 0, 0, 0));
     z-index: 2;
     pointer-events: none;
+    user-select: none;
 }
 
 .carrousel__text {
     position: absolute;
-    bottom: 10%;
+    bottom: calc(100vh - 70%);
     right: 5%;
     color: white;
     z-index: 3;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     text-align: right;
     opacity: 1;
     transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
@@ -61,14 +63,17 @@
 }
 
 .carrousel__title {
-    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    width: 100%;
+    font-size: 5.5cqw;
     margin: 0;
 }
 
 .carrousel__description {
+    width: 100%;
+    max-width: 600px;
     font-size: clamp(1.1rem, 1.2vw, 2rem);
     color: #EFE9E2;
-    margin: 10px 0;
+    margin: 15px 0 0 auto;
 }
 
 .carrousel__images {
@@ -79,6 +84,7 @@
     height: 100%;
     z-index: -1; 
     overflow: hidden;
+    user-select: none;
 }
 
 .carrouse__image {
@@ -107,8 +113,8 @@
 }
 
 .carousel__dot {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     cursor: pointer;
