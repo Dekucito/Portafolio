@@ -185,6 +185,10 @@ border-bottom-color: var(--title);
     transition: top 0.3s, background-color 0.3s;
 }
 
+header a {
+    padding-top: 4px;
+}
+
 .container__header.hidden {
     top: -50px;
 }

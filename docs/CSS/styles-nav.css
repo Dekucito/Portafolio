@@ -1,0 +1,115 @@
+/* Estilos para el icono del menú (hamburguesa) */
+.icon-menu {
+    display: none;
+}
+
+.icon-menu:hover {
+    color: #ffff;
+}
+
+@media (max-width: 720px) {
+    .icon-menu {
+        width: 50px;
+        height: 100%;
+        color: #98989f;
+        display: block;
+        z-index: 100;
+        position: relative;
+    }
+
+    .container__header {
+        display: flex;
+    }
+}
+
+/* Estado inicial del menú, fuera de la pantalla, arriba */
+.container__responsive {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2f2f2f;
+    position: fixed;  /* Fijamos el menú a la pantalla */
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Cuando el menú está activo, lo movemos a la pantalla */
+.container__responsive.active {
+    transform: translateY(0); /* Mover el menú a su posición visible */
+}
+
+/* Los estilos de navegación siguen igual */
+.nav__responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__list-responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.nav__item-responsive {
+    font-size: 2rem;
+}
+
+.line__responsive {
+    display: flex;
+    width: 50%;
+    height: 1px;
+}
+
+.nav__svg-responsive {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+}
+
+/* Posicionar el icono en la pantalla */
+.icon-menu--active {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 2%;
+    top: 10px;
+}
+
+/* Desaparecer el botón de trabajo cuando el menú está activo */
+.button--responsive {
+    display: none;
+}
+
+/* Mostrar la X cuando el menú está activo */
+.menu-icon {
+    display: block;
+}
+
+.close-icon {
+    display: none;
+}
+
+/* Mostrar la X cuando el menú está activo */
+.icon-menu--active .menu-icon {
+    display: none;
+}
+
+.icon-menu--active .close-icon {
+    display: block;
+}
+
+/* Bloquear el scroll de la página */
+body.no-scroll {
+    overflow: hidden !important;
+}
+
+/* Si también deseas bloquear el scroll del <html> */
+html.no-scroll {
+    overflow: hidden !important;
+}
+            
