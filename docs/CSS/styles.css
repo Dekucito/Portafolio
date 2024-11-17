@@ -958,12 +958,18 @@ border-bottom-color: var(--title);
 
 .project__data-title{
     color: #8655A8;
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    margin-bottom: 5px;
 }
 
 .project__data-title--paragraph{
     color: #ffff;
     font-size: clamp(2rem, 3vw, 3.5rem);
+}
+
+.project__data-sub-title--paragraph{
+    color: #ffff;
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
 }
 
 .project__data-paragraph{
@@ -975,19 +981,29 @@ border-bottom-color: var(--title);
 
 .project__data-description{
     color: #ffff;
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: 1.2rem;
+    font-family: "Funnel Sans", sans-serif;
+    margin-top: 5px;
+    font-weight: 600;
 }
 
-.project__data-paragraph--paragraph{
+
+.project__data-paragraph--paragraph, .project__data-item{
     color: #ffff;
-    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    font-size: 1.2rem;
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.project__data-item{
+    margin-left: 30px;
 }
 
 .project__data-description--icons{
     width: 70%;
     display: flex;
     gap: 5px;
-    margin-top: 5px;
 }
 
 .data__description{

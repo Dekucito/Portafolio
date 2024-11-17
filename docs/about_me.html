@@ -17,14 +17,14 @@
             <nav class="nav">
                 <a href="#contact" class="button button--font-white button--border-colors button--responsive-job">Disponible para trabajar</a>
                 <ul class="nav__list">
-                    <li><a class="nav__item" href="index.html">Portafolio</a></li>
-                    <li><a class="nav__item" href="about_me.html">Sobre mi</a></li>
-                    <li><a class="nav__item" href="#contact">Contacto</a></li>
+                    <li><a class="nav__item" href="index.html" id="nav-portfolio">Portafolio</a></li>
+                    <li><a class="nav__item" href="about_me.html" id="nav-about-me">Sobre mí</a></li>
+                    <li><a class="nav__item" href="#contact" id="nav-contact">Contacto</a></li>
                 </ul>
 
                 <div class="line"></div>
 
-                <div class="select-lang">
+                <!--<div class="select-lang">
                     <svg id="languaje-select" class="nav__svg" width="32px" height="16px" viewBox="0 0 32 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.605 7.01C7.43 6.405 7.215 5.35 7.215 5.35H7.19C7.19 5.35 6.975 6.405 6.8 7.01L6.245 8.885H8.15L7.605 7.01ZM30.8 0H16.8V16H30.8C31.465 16 32 15.465 32 14.8V1.2C32 0.535 31.465 0 30.8 0ZM29.6 6C29.6 6.33 29.33 6.6 29 6.6H28.43C28.085 7.78 27.345 8.97 26.295 10.095C26.715 10.415 27.15 10.72 27.6 10.995C27.875 11.165 27.965 11.52 27.805 11.805L27.41 12.5C27.24 12.795 26.865 12.89 26.575 12.715C25.945 12.325 25.35 11.91 24.805 11.47C24.26 11.905 23.67 12.325 23.035 12.715C22.745 12.89 22.37 12.795 22.2 12.5L21.805 11.805C21.645 11.525 21.735 11.165 22.015 10.995C22.48 10.71 22.915 10.41 23.32 10.095C22.925 9.675 22.575 9.245 22.27 8.81C22.07 8.525 22.16 8.13 22.455 7.955L22.78 7.76L23.145 7.545C23.415 7.385 23.765 7.46 23.945 7.715C24.195 8.065 24.485 8.415 24.815 8.76C25.49 8.05 26.005 7.315 26.315 6.6H20.6C20.27 6.6 20 6.33 20 6V5.2C20 4.87 20.27 4.6 20.6 4.6H23.8V3.8C23.8 3.47 24.07 3.2 24.4 3.2H25.2C25.53 3.2 25.8 3.47 25.8 3.8V4.6H29C29.33 4.6 29.6 4.87 29.6 5.2V6ZM0 1.2V14.8C0 15.465 0.535 16 1.2 16H15.2V0H1.2C0.535 0 0 0.535 0 1.2ZM2.945 12.005L5.82 3.55C5.905 3.305 6.13 3.145 6.39 3.145H8.015C8.27 3.145 8.5 3.31 8.585 3.55L11.46 12.005C11.59 12.395 11.305 12.8 10.89 12.8H9.745C9.6156 12.7999 9.48971 12.758 9.38608 12.6805C9.28246 12.603 9.20666 12.4941 9.17 12.37L8.7 10.775H5.69L5.235 12.365C5.16 12.62 4.925 12.8 4.66 12.8H3.515C3.105 12.8 2.815 12.395 2.945 12.005Z" />
                     </svg>
@@ -50,7 +50,7 @@
                     </ul>
                 </div>
             
-                <div class="line"></div>
+                <div class="line"></div>-->
 
                 <a href="http://www.linkedin.com/in/andres-chanci" target="_blank">
                     <svg class="nav__svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@
                     <svg class="sub-title__icon" viewBox="0 0 27 27" fill="currentColor">
                         <path d="M6.75 6.39474C6.75 9.92037 9.7785 12.7895 13.5 12.7895C17.2215 12.7895 20.25 9.92037 20.25 6.39474C20.25 2.86911 17.2215 0 13.5 0C9.7785 0 6.75 2.86911 6.75 6.39474ZM25.5 27H27V25.5789C27 20.0951 22.2885 15.6316 16.5 15.6316H10.5C4.71 15.6316 0 20.0951 0 25.5789V27H25.5Z"/>
                     </svg>                        
-                    <span class="sub-title__text">Sobre mí</span>
+                    <span class="sub-title__text" id="about-title">Sobre mí</span>
                 </section>
             
                 <section class="section-contend">
@@ -105,14 +105,16 @@
                         </div>
                     </div>
                     <div class="section-contend__description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-                        <p class="description__text">
-                            Desarrollador responsable de la creación de un software integral que mejoró significativamente la comunicación entre el equipo técnico y el departamento de ventas, optimizando los flujos de trabajo internos. Además, implementé un sistema de registro de piezas de equipos, facilitando la trazabilidad y el control de inventario. 
+                        <p class="description__text" id="about-description-1">
+                            Me enfoco en programación, diseño de gameplay, implementación de arte y diseño de UI. Con más de 2 años de experiencia usando Unity y 6 meses de experiencia profesional, mi objetivo es crear juegos que sean divertidos y atractivos, brindando experiencias que cautivan a los jugadores.
                         </p><br>
-                        <p class="description__text">
-                            Desarrollador responsable de la creación de un software integral que mejoró significativamente la comunicación entre el equipo técnico y el departamento de ventas, optimizando los flujos de trabajo internos. Además, implementé un sistema de registro de piezas de equipos, facilitando la trazabilidad y el control de inventario. 
+                        <p class="description__text" id="about-description-2">
+                            Busco seguir creciendo como desarrollador y trabajar en proyectos que lleguen a una audiencia global, creando juegos que sean disfrutados por personas de todo el mundo.
                         </p><br>
+
                         
-                        <a href="../CURRICULUM/AndresChanci_Curriculum.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+                        
+                        <a href="../CURRICULUM/AndresChanci_Curriculum.pdf" target="_blank" style="text-decoration: none; color: inherit; margin-top:auto">
                             <button class="button button--bottom button--curriculum" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                 <svg class="button--icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.44796 14.5669C-0.5084 12.6829 -0.471938 9.64472 1.49437 7.76754L8.51758 1.06251C10.0014 -0.354109 12.4133 -0.354234 13.8972 1.06251C15.3667 2.46545 15.3685 4.72904 13.8972 6.13363L7.77501 11.9727C6.7754 12.927 5.14221 12.9137 4.15954 11.9416C3.21284 11.005 3.24321 9.52053 4.20816 8.59928L9.02098 4.0107C9.22797 3.81339 9.56714 3.81001 9.77855 4.00317L10.544 4.70251C10.7554 4.8957 10.759 5.21226 10.5521 5.40957L5.73973 9.99772C5.5746 10.1554 5.56442 10.4173 5.71804 10.5693C5.86442 10.7142 6.09454 10.7166 6.2433 10.5745L12.3655 4.73542C13.0222 4.10848 13.0222 3.08776 12.3651 2.46048C11.7226 1.84714 10.6924 1.84683 10.0497 2.46048L3.02644 9.16547C1.8625 10.2767 1.84456 12.0755 2.98657 13.1752C4.12529 14.2719 5.96597 14.2733 7.10681 13.1842L12.8677 7.68422C13.0746 7.48676 13.4137 7.48319 13.6253 7.67622L14.3913 8.3751C14.6029 8.56813 14.6067 8.88469 14.3999 9.08216L8.63892 14.5821C6.64419 16.4864 3.41761 16.4638 1.44796 14.5669Z" fill="#98989F"/>
@@ -143,37 +145,14 @@
                             </svg>
                         </div>
                         <div class="section-contend__references">
-                            <span class="reference__job-name">Practicante en desarrollo de software</span>
-                            <span class="reference__company">Alcom sas</span>
-                            <span class="reference__dates">Julio 2024 - Enero 2025</span>
+                            <span class="reference__job-name">Desarrollador de Videojuegos</span>
+                            <a href="https://fryosstudios.com/es/" target="_blank"><span class="reference__company">FRYOS STUDIOS SAS</span></a>
+                            <span class="reference__dates">Mayo 2024 - Noviembre 2024</span>
                         </div>
                     </div>
                     <div class="section-contend__description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <p class="description__text">
-                            Desarrollador responsable de la creación de un software integral que mejoró significativamente la comunicación entre el equipo técnico y el departamento de ventas, optimizando los flujos de trabajo internos. Además, implementé un sistema de registro de piezas de equipos, facilitando la trazabilidad y el control de inventario.
-                        </p>
-                    </div>
-                </section>
-
-                
-
-                <section class="section-contend">
-                    <div class="section-contend__reference" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                        <div class="reference__line"></div>
-                        <div class="reference__dot reference__dot--emphasis">
-                            <svg width="60px" height="60px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z"/>
-                            </svg>
-                        </div>
-                        <div class="section-contend__references">
-                            <span class="reference__job-name">Practicante en desarrollo de software</span>
-                            <span class="reference__company">Alcom sas</span>
-                            <span class="reference__dates">Julio 2024 - Enero 2025</span>
-                        </div>
-                    </div>
-                    <div class="section-contend__description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                        <p class="description__text">
-                            Desarrollador responsable de la creación de un software integral que mejoró significativamente la comunicación entre el equipo técnico y el departamento de ventas, optimizando los flujos de trabajo internos. Además, implementé un sistema de registro de piezas de equipos, facilitando la trazabilidad y el control de inventario.
+                            Lideré el desarrollo de un proyecto desde su concepto inicial hasta la entrega, gestionando todas las fases del proceso. Esto incluyó programación avanzada, implementación de arte y efectos visuales (VFX), y diseño de UI para garantizar una experiencia de usuario coherente y atractiva. Además, adapté un juego existente para multijugador online, optimizando su red, ajustando la jugabilidad y mejorando la interfaz. Rediseñé elementos visuales y funcionales, integrando nuevas mecánicas de juego para ofrecer una experiencia fluida. Coordiné y ejecuté pruebas exhaustivas para garantizar la calidad, el rendimiento y la estabilidad del juego antes de su entrega final.
                         </p>
                     </div>
                 </section>
@@ -187,7 +166,7 @@
                     </svg>
                 </div>
                 <div class="phrase__section-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ipsa asperiores laboriosam, accusantium non inventore illo doloremque laborum nam voluptates libero corporis animi cupiditate perferendis quam consectetur neque tempore. Maxime, distinctio quam exercitationem veritatis sunt necessitatibus.</p>
+                    <p>Mi amor por los videojuegos y la programación me lleva a crear experiencias que no solo se jueguen, sino que se vivan. La pasión por los videojuegos me impulsa a poner todo mi empeño en cada detalle, buscando crear juegos que queden en la memoria de quienes los disfruten.</p>
                 </div>
             </section>
 
@@ -212,14 +191,35 @@
                             </svg>
                         </div>
                         <div class="section-contend__references">
-                            <span class="reference__job-name">Practicante en desarrollo de software</span>
-                            <span class="reference__company">Alcom sas</span>
-                            <span class="reference__dates">Julio 2024 - Enero 2025</span>
+                            <span class="reference__job-name">Tecnología de Desarrollo de Videojuegos y Entornos Interactivos</span>
+                            <span class="reference__company">SENA</span>
+                            <span class="reference__dates">Noviembre 2024</span>
                         </div>
                     </div>
                     <div class="section-contend__description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <p class="description__text">
-                            Desarrollador responsable de la creación de un software integral que mejoró significativamente la comunicación entre el equipo técnico y el departamento de ventas, optimizando los flujos de trabajo internos. Además, implementé un sistema de registro de piezas de equipos, facilitando la trazabilidad y el control de inventario.
+                            Durante mi formación, me enfoqué en el desarrollo de videojuegos, aprendiendo desde la programación básica hasta conceptos avanzados. Estudié el diseño de mecánicas de juego, la implementación de interfaces de usuario (UI) y la integración de arte y efectos visuales (VFX). A lo largo de mi carrera, adquirí habilidades clave en herramientas como Unity y C#, y me especialicé en la creación de juegos centrados en la jugabilidad y la calidad.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section-contend">
+                    <div class="section-contend__reference" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                        <div class="reference__line"></div>
+                        <div class="reference__dot reference__dot--emphasis">
+                            <svg width="60px" height="60px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z"/>
+                            </svg>
+                        </div>
+                        <div class="section-contend__references">
+                            <span class="reference__job-name">Técnico auxiliar en desarrollo de software</span>
+                            <span class="reference__company">Institución Universitaria Pascual Bravo</span>
+                            <span class="reference__dates">Diciembre 2022</span>
+                        </div>
+                    </div>
+                    <div class="section-contend__description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                        <p class="description__text">
+                            Durante mi formación en desarrollo web y software, aprendí los conceptos básicos de programación, así como el uso de tecnologías fundamentales como HTML y CSS. Me enfoqué en adquirir una comprensión sólida de la estructura y el diseño de sitios web, con el objetivo de crear interfaces sencillas y funcionales.
                         </p>
                     </div>
                 </section>
@@ -288,7 +288,7 @@
             <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="800">
                 <div class="contact__header">
                     <span class="contact__title">¡Contáctame!</span>
-                    <p class="contact__description">Por favor, ingresa los datos necesarios para registrar un nuevo usuario.</p>
+                    <p class="contact__description">Vamos a crear cosas increíbles</p>
                 </div>
                 <form class="container__form">
                     <div class="form__largue">
