@@ -42,6 +42,10 @@ html, body {
 border-bottom-color: var(--title);
 }
 
+.iconTooltip--link:hover{
+    background-color: rgba(134, 85, 168, 0.2);
+}
+
 /*============= generalidades ================*/
 
 .gradient-circle{
