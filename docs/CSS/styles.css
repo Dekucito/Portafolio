@@ -355,6 +355,43 @@ border-bottom-color: var(--title);
     flex-direction: column
 }
 
+.project__cards{
+    padding: 15px 0 15px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 130px;
+    /*background-color: aqua;*/
+}
+
+.project__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: calc(100% / 3);
+    height: 130px;
+    background-color: rgba(134, 85, 168, 0.4);
+    border: 1px solid #8655A8;
+}
+
+.project__card:hover{
+    background-color: rgba(134, 85, 168, 0.5);
+}
+
+.project__card-icon{
+    color: #8655A8;
+    width: 35px;
+    height: 35px;
+}
+
+.project__card-text{
+    color: white;
+}
+
 /*----- sub bloque contacto -----*/
 
 .contact{
@@ -425,6 +462,8 @@ border-bottom-color: var(--title);
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 70px;
+    padding-left: 0;
 }
 
 .start__text-description {
@@ -936,6 +975,7 @@ border-bottom-color: var(--title);
 .projec__container-data-description{
     width: 100%;
     height: auto;
+    margin-top: 7px;
 }
 
 .project__info{
@@ -952,7 +992,7 @@ border-bottom-color: var(--title);
 }
 
 .projec__container-data{
-    border-bottom: 2px solid #8655A8;
+    border-bottom: 1px solid #8655A8;
     padding: 20px 0 20px 0;
 }
 
