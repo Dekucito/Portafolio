@@ -226,7 +226,7 @@ header a {
 
 @media (max-width: 720px) {
     .container__header {
-        padding: 17px 10px 0 10px;
+        padding: 10px;
     }
 
 }
