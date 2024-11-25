@@ -29,12 +29,41 @@
         
         <header class="container__header" id="header">
             <nav class="nav" id="nav">
-                <a href="#contact" class="button button--font-white button--border-colors" id="buttonJob">Disponible para trabajar</a>
+                <a href="#contact" class="button button--font-white button--border-colors" id="buttonJob" data-section="buttons" data-value="button-job">Disponible para trabajar</a>
                 <ul class="nav__list" id="navList">
-                    <li><a class="nav__item" href="index.html">Portafolio</a></li>
-                    <li><a class="nav__item" href="about_me.html">Sobre mí</a></li>
-                    <li><a class="nav__item" id="itemContact" href="#contact">Contacto</a></li>
+                    <li><a class="nav__item" href="index.html" data-section="navigation" data-value="nav-portfolio">Portafolio</a></li>
+                    <li><a class="nav__item" href="about_me.html" data-section="navigation" data-value="nav-about">Sobre mí</a></li>
+                    <li><a class="nav__item" id="itemContact" href="#contact" data-section="navigation" data-value="nav-contact">Contacto</a></li>
                 </ul>
+
+                <div class="line"></div>
+
+                <div class="select-lang">
+                    <svg id="languaje-select" class="nav__svg" width="32px" height="16px" viewBox="0 0 32 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.605 7.01C7.43 6.405 7.215 5.35 7.215 5.35H7.19C7.19 5.35 6.975 6.405 6.8 7.01L6.245 8.885H8.15L7.605 7.01ZM30.8 0H16.8V16H30.8C31.465 16 32 15.465 32 14.8V1.2C32 0.535 31.465 0 30.8 0ZM29.6 6C29.6 6.33 29.33 6.6 29 6.6H28.43C28.085 7.78 27.345 8.97 26.295 10.095C26.715 10.415 27.15 10.72 27.6 10.995C27.875 11.165 27.965 11.52 27.805 11.805L27.41 12.5C27.24 12.795 26.865 12.89 26.575 12.715C25.945 12.325 25.35 11.91 24.805 11.47C24.26 11.905 23.67 12.325 23.035 12.715C22.745 12.89 22.37 12.795 22.2 12.5L21.805 11.805C21.645 11.525 21.735 11.165 22.015 10.995C22.48 10.71 22.915 10.41 23.32 10.095C22.925 9.675 22.575 9.245 22.27 8.81C22.07 8.525 22.16 8.13 22.455 7.955L22.78 7.76L23.145 7.545C23.415 7.385 23.765 7.46 23.945 7.715C24.195 8.065 24.485 8.415 24.815 8.76C25.49 8.05 26.005 7.315 26.315 6.6H20.6C20.27 6.6 20 6.33 20 6V5.2C20 4.87 20.27 4.6 20.6 4.6H23.8V3.8C23.8 3.47 24.07 3.2 24.4 3.2H25.2C25.53 3.2 25.8 3.47 25.8 3.8V4.6H29C29.33 4.6 29.6 4.87 29.6 5.2V6ZM0 1.2V14.8C0 15.465 0.535 16 1.2 16H15.2V0H1.2C0.535 0 0 0.535 0 1.2ZM2.945 12.005L5.82 3.55C5.905 3.305 6.13 3.145 6.39 3.145H8.015C8.27 3.145 8.5 3.31 8.585 3.55L11.46 12.005C11.59 12.395 11.305 12.8 10.89 12.8H9.745C9.6156 12.7999 9.48971 12.758 9.38608 12.6805C9.28246 12.603 9.20666 12.4941 9.17 12.37L8.7 10.775H5.69L5.235 12.365C5.16 12.62 4.925 12.8 4.66 12.8H3.515C3.105 12.8 2.815 12.395 2.945 12.005Z" />
+                    </svg>
+                    <ul class="list-langs" id="list-languaje"> 
+                        <li class="lang" data-language="es">
+                            <a class="lang-link">
+                                <svg width="15px" height="15px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet">
+                                    <path fill="#FBD116" d="M32 5H4a4 4 0 0 0-4 4v9h36V9a4 4 0 0 0-4-4z"></path>
+                                    <path fill="#22408C" d="M0 18h36v7H0z"></path><path fill="#CE2028" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-2H0v2z"></path>
+                                </svg>
+                                <span class="lang-text"  data-section="navigation" data-value="nav-spanish">Español</span>
+                            </a>
+                        </li>
+                        <li class="lang" data-language="en">
+                            <a class="lang-link">
+                                <svg width="15px" height="15px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet">
+                                    <path d="M35.692 28.538H.308A4 4 0 0 0 4 31h28a4 4 0 0 0 3.692-2.462zM0 23.811h36v2.561H0zM11.5 9.629H36v2.561H11.5zm24.192-2.167A4 4 0 0 0 32 5H11.5v2.462h24.192zM11.5 14.356H36v2.561H11.5zM0 19.083h36v2.561H0z" fill="#BF0A30"></path>
+                                    <path d="M11.5 12.189H36v2.167H11.5zM0 16.917v2.166h36v-2.166H12zm11.5-9.455v2.167H36V9c0-.545-.111-1.064-.308-1.538H11.5zM0 21.644h36v2.167H0zM0 27c0 .545.111 1.064.308 1.538h35.383A3.98 3.98 0 0 0 36 27v-.629H0V27z" fill="#EEE"></path>
+                                    <path fill="#002868" d="M4 5a4 4 0 0 0-4 4v7.917h12V5H4z"></path><path fill="#FFF" d="M6.794 10.245L6 7.802l-.794 2.443H2.638l2.078 1.51l-.794 2.443L6 12.688l2.078 1.51l-.794-2.443l2.078-1.51z"></path></svg>
+                                <span class="lang-text"  data-section="navigation" data-value="nav-english">Ingles</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
         
                 <div class="line" id="line"></div>
         
@@ -70,8 +99,8 @@
                 <div class="carrousel__overlay-gradient"></div>
 
                 <div class="carrousel__text">
-                    <h1 class="carrousel__title">¡Bienvenido a mi portafolio!</h1>
-                    <p class="carrousel__description">Soy un desarrollador de videojuegos apasionado por crear experiencias divertidas y emocionantes. Aquí podrás ver algunos de mis proyectos y lo que he aprendido a lo largo de mi camino en el mundo del desarrollo de juegos.</p>
+                    <h1 class="carrousel__title" data-section="general" data-value="portfolio-title">¡Bienvenido a mi portafolio!</h1>
+                    <p class="carrousel__description" data-section="general" data-value="portfolio-description">Soy un desarrollador de videojuegos apasionado por crear experiencias divertidas y emocionantes. Aquí podrás ver algunos de mis proyectos y lo que he aprendido a lo largo de mi camino en el mundo del desarrollo de juegos.</p>
                 </div>
             
                 <section class="carrousel__images" data-aos="zoom-in" data-aos-duration="400">
@@ -102,8 +131,8 @@
                 <section class="section-contend section-contend--projects">
                     <article class="section-contend__project">
                         <div class="project__section-info">
-                            <span class="project__name">Loftnes</span>
-                            <span class="project__category">RPG, Adventure, Top down </span>
+                            <span class="project__name" data-section="first-project-resumen" data-value="resumen-name">Loftnes</span>
+                            <span class="project__category" data-section="first-project-resumen" data-value="resumen-categories">RPG, Adventure, Top down </span>
                             <div class="project__technologies" >
                                 <div class="project__icon-container iconTooltip" data-nameIcon="Unity" >
                                     <svg  class="project__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -127,11 +156,11 @@
 
                             </div>
 
-                            <p class="project__description">Despierta como un caballero en el misterioso pueblo de Loftnes. Explora vastos territorios, enfréntate a enemigos en combates cuerpo a cuerpo y desvela los secretos de este mundo. Mejora a tu personaje, descubre portales misteriosos y viaja a lugares desconocidos. Con gráficos en pixel art y un estilo visual único, disfruta de una experiencia llena de exploración y combate.</p>
+                            <p class="project__description" data-section="first-project-resumen" data-value="resumen-description">Despierta como un caballero en el misterioso pueblo de Loftnes. Explora vastos territorios, enfréntate a enemigos en combates cuerpo a cuerpo y desvela los secretos de este mundo. Mejora a tu personaje, descubre portales misteriosos y viaja a lugares desconocidos. Con gráficos en pixel art y un estilo visual único, disfruta de una experiencia llena de exploración y combate.</p>
 
                             <div class="project__buttons">
-                                <a href="project_a1.html" class="button button--font-white button--carrousel button--project" target="_blank">Visualizar</a>
-                                <a href="https://github.com/Dekucito/LOFTNES" class="button button--font-white button--carrousel button--project" target="_blank">Codigo</a>
+                                <a href="project_a1.html" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-view">Visualizar</a>
+                                <a href="https://github.com/Dekucito/LOFTNES" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-code">Codigo</a>
                             </div>
                         </div>
                         <div class="project__section-image">
@@ -146,8 +175,8 @@
                             <img class="project__image-portfolio" src="IMG/projects/a2/webp/image1.webp" alt="">
                         </div>
                         <div class="project__section-info">
-                            <span class="project__name">La Rebelión de las Ovejas</span>
-                            <span class="project__category">Run, Shooter, Action</span>
+                            <span class="project__name" data-section="second-project-resumen" data-value="resumen-name">La Rebelión de las Ovejas</span>
+                            <span class="project__category" data-section="second-project-resumen" data-value="resumen-categories">Run, Shooter, Action</span>
                             <div class="project__technologies" >
                                 <div class="project__icon-container iconTooltip" data-nameIcon="Unity" >
                                     <svg  class="project__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -171,11 +200,11 @@
 
                             </div>
 
-                            <p class="project__description">Corre y dispara como un lobo mientras te enfrentas a hordas de ovejas furiosas que se han rebelado. Esquiva ataques, recoge multiplicadores para controlar más lobos, y lucha contra oleadas interminables. Con gráficos 3D tiernos y una atmósfera divertida, disfruta de acción continua en una carrera desenfrenada por la supervivencia.
+                            <p class="project__description" data-section="second-project-resumen" data-value="resumen-description">Corre y dispara como un lobo mientras te enfrentas a hordas de ovejas furiosas que se han rebelado. Esquiva ataques, recoge multiplicadores para controlar más lobos, y lucha contra oleadas interminables. Con gráficos 3D tiernos y una atmósfera divertida, disfruta de acción continua en una carrera desenfrenada por la supervivencia.
                             </p>
 
                             <div class="project__buttons">
-                                <a href="project_a2.html" class="button button--font-white button--carrousel button--project" target="_blank">Visualizar</a>
+                                <a href="project_a2.html" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-view">Visualizar</a>
                             </div>
                         </div>
                     </article>
@@ -184,8 +213,8 @@
                 <section class="section-contend section-contend--projects">
                     <article class="section-contend__project">
                         <div class="project__section-info">
-                            <span class="project__name">2D Battle Royale</span>
-                            <span class="project__category">Multiplayer, Shooter, Action </span>
+                            <span class="project__name" data-section="third-project-resumen" data-value="resumen-name">2D Battle Royale</span>
+                            <span class="project__category" data-section="third-project-resumen" data-value="resumen-categories">Multiplayer, Shooter, Action </span>
                             <div class="project__technologies" >
                                 <div class="project__icon-container iconTooltip" data-nameIcon="Unity" >
                                     <svg  class="project__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -215,11 +244,11 @@
 
                             </div>
 
-                            <p class="project__description">¡Entra a un campo de batalla frenético en este shooter 2D multijugador! Lucha desde una vista superior usando habilidades especiales como escudos y dash para ser el último en pie. Combate a otros jugadores o enfréntate a una IA desafiante que imita el comportamiento humano. Con gráficos pixel art coloridos y personajes adorables, es acción divertida para todas las edades.
+                            <p class="project__description" data-section="third-project-resumen" data-value="resumen-description">¡Entra a un campo de batalla frenético en este shooter 2D multijugador! Lucha desde una vista superior usando habilidades especiales como escudos y dash para ser el último en pie. Combate a otros jugadores o enfréntate a una IA desafiante que imita el comportamiento humano. Con gráficos pixel art coloridos y personajes adorables, es acción divertida para todas las edades.
                             </p>
 
                             <div class="project__buttons">
-                                <a href="project_a3.html" class="button button--font-white button--carrousel button--project" target="_blank">Visualizar</a>
+                                <a href="project_a3.html" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-view">Visualizar</a>
                             </div>
                         </div>
                         <div class="project__section-image">
@@ -235,8 +264,8 @@
                             <img class="project__image-portfolio" src="IMG/projects/a4/webp/image1.webp" alt="">
                         </div>
                         <div class="project__section-info">
-                            <span class="project__name">Cat Crush</span>
-                            <span class="project__category">Single player, puzzle, Logic</span>
+                            <span class="project__name" data-section="fourth-project-resumen" data-value="resumen-name">Cat Crush</span>
+                            <span class="project__category" data-section="fourth-project-resumen" data-value="resumen-categories">Single player, puzzle, Logic</span>
                             <div class="project__technologies">
                                 <div class="project__icon-container iconTooltip" data-nameicon="Unity">
                                     <svg class="project__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -260,12 +289,12 @@
 
                             </div>
 
-                            <p class="project__description">Disfruta de un juego de rompecabezas adictivo inspirado en los clásicos. Haz coincidir gatitos y objetos especiales para crear explosiones y superar niveles desafiantes. Con gráficos en pixel art encantadores, cada nivel te ofrece una experiencia visual única y divertida.
+                            <p class="project__description" data-section="fourth-project-resumen" data-value="resumen-description">Disfruta de un juego de rompecabezas adictivo inspirado en los clásicos. Haz coincidir gatitos y objetos especiales para crear explosiones y superar niveles desafiantes. Con gráficos en pixel art encantadores, cada nivel te ofrece una experiencia visual única y divertida.
                             </p>
 
                             <div class="project__buttons">
-                                <a href="project_a4.html" class="button button--font-white button--carrousel button--project" target="_blank">Visualizar</a>
-                                <a href="https://github.com/Dekucito/CatCrush" class="button button--font-white button--carrousel button--project" target="_blank">Codigo</a>
+                                <a href="project_a4.html" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-view">Visualizar</a>
+                                <a href="https://github.com/Dekucito/CatCrush" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-code">Codigo</a>
                             </div>
                         </div>
                     </article>
@@ -274,8 +303,8 @@
                 <section class="section-contend section-contend--projects">
                     <article class="section-contend__project">
                         <div class="project__section-info">
-                            <span class="project__name">Meteor Glide</span>
-                            <span class="project__category">Infinite, single player, survival</span>
+                            <span class="project__name" data-section="fifth-project-resumen" data-value="resumen-name">Meteor Glide</span>
+                            <span class="project__category" data-section="fifth-project-resumen" data-value="resumen-categories">Infinite, single player, survival</span>
                             <div class="project__technologies">
                                 <div class="project__icon-container iconTooltip" data-nameicon="Unity">
                                     <svg class="project__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -299,11 +328,11 @@
 
                             </div>
 
-                            <p class="project__description">Enfréntate a un desafío infinito en el espacio, esquivando meteoritos y rayos láser mientras luchas por sobrevivir. Cuanto más resistas, más difícil será el reto. Utiliza escudos de inmunidad para protegerte en los momentos críticos y disfruta de gráficos retro en pixel art que evocan los clásicos arcades.</p>
+                            <p class="project__description" data-section="fifth-project-resumen" data-value="resumen-description">Enfréntate a un desafío infinito en el espacio, esquivando meteoritos y rayos láser mientras luchas por sobrevivir. Cuanto más resistas, más difícil será el reto. Utiliza escudos de inmunidad para protegerte en los momentos críticos y disfruta de gráficos retro en pixel art que evocan los clásicos arcades.</p>
 
                             <div class="project__buttons">
-                                <a href="project_a5.html" class="button button--font-white button--carrousel button--project" target="_blank">Visualizar</a>
-                                <a href="https://github.com/Dekucito/METEOR---GLIDE" class="button button--font-white button--carrousel button--project" target="_blank">Codigo</a>
+                                <a href="project_a5.html" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-view">Visualizar</a>
+                                <a href="https://github.com/Dekucito/METEOR---GLIDE" class="button button--font-white button--carrousel button--project" target="_blank" data-section="buttons" data-value="button-code">Codigo</a>
                             </div>
                         </div>
                         <div class="project__section-image">
@@ -317,7 +346,7 @@
             </section>
 
             <div class="message">
-                <div class="message__text">
+                <div class="message__text" data-section="general" data-value="projects-message">
                     ¿Te gustaron los proyectos? Imagina lo que podríamos crear juntos. Hablemos y llevemos tus ideas al siguiente nivel.
                 </div>
             </div>
