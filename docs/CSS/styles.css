@@ -1155,4 +1155,79 @@ header a {
     }
 }
 
+/*============= Bloque modal ================*/
+
+.button__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px; /* Margen desde la parte inferior */
+    right: 20px; /* Margen desde la derecha */
+    z-index: 999999;
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón, igual al ancho para que sea redondo */
+    border-radius: 50%; /* Hace el botón redondo */
+    border: 1px solid blueviolet;
+    background-color: #9265b1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para darle profundidad */
+    cursor: pointer; /* Cambiar el cursor a pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para hover */
+}
+
+.button__video:hover {
+    background-color: #9265b1; /* Cambia el color en hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño en hover */
+}
+
+.icon__video{
+    width: 40px;
+}
+
+/* Fondo del modal */
+.modal__video {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.9); /* Fondo más oscuro */
+    z-index: 1000000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del contenido del modal */
+.modal-content {
+    position: relative;
+    padding: 10px;
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del iframe */
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Sin bordes en el iframe */
+}
+
+/* Botón de cerrar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
 
